@@ -1,0 +1,143 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+.hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  min-height: 176px;
+  margin-top: 4.5rem;
+}
+
+.hero-title {
+  font-weight: 300;
+  color: var(--Gray);
+  font-size: 4.9rem;
+  font-size: clamp(2rem, 10vw, 4.9rem);
+
+  margin-top: 4.7rem;
+  letter-spacing: -0.035rem;
+}
+.title-bold {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
+.hero-parag {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--Very-Dark-Blue);
+
+  margin-top: 1.6rem;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 637px;
+  gap: 1.6rem;
+  margin-top:3.35rem;
+
+}
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+input,
+button {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.8rem;
+  width: 100%;
+
+}
+input {
+  max-width: 420px;
+  border: 1px solid var(--Pale-Blue);
+  padding-top: 3px;
+  cursor: pointer;
+  padding-left: 2.9rem;
+
+}
+input::placeholder {
+  color: var(--Gray);
+  opacity: .5;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+}
+
+button {
+  max-width: 200px;
+  border: none;
+  background-color: var(--Blue);
+  font-size: 1.56rem;
+  letter-spacing: .05rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  padding-left: 1px;
+  padding-top: 3px;
+  cursor: pointer;
+
+}
+.hero-image-container {
+  max-width: 640px;
+  width: 100%;
+  height: auto;
+  margin-top: 9rem;
+}
+.hero-img {
+  width: 100%;
+}
+button:hover{
+background-color: inherit;
+color: var(--Blue);
+border: 1px solid var(--Blue);
+transform: scale(1.05);
+}
+input:focus{
+    outline: none;
+}
+input:hover{
+    border: 1px solid var(--Blue);
+}
+.hero-img:hover {
+    cursor: pointer;
+    transform: rotate(5deg) scale(1.1);
+}
+.error-message{
+    color: var(--Light-Red);
+    font-weight: 500;
+    font-size: 1.56rem;
+    padding-top: 8px;
+    position: absolute;
+    bottom: -3rem;
+    left: 3rem;
+}
+
+
+.white-text{
+    color: rgba(255, 255, 255, 0.801);
+  }
+  .dark-img{
+    filter: brightness(50%) contrast(100%);
+  }

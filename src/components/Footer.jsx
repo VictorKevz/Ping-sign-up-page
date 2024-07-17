@@ -1,21 +1,31 @@
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
 import { IconContext } from "react-icons";
+import "./css/footer.css";
 
 function Footer() {
   return (
-    <footer>
-      <div className="social-links">
-        <IconContext.Provider value={{ className: "react-icons" }}>
+    <div className="footer-container">
+      <div className="socials">
+      <IconContext.Provider value={{ className: "react-icons" }}>
+        <div className="icon-wrapper">
+          {" "}
           <FaFacebookF />
+        </div>
+        <div className="icon-wrapper">
           <FaTwitter />
+        </div>
+        <div className="icon-wrapper">
           <FaInstagram />
-        </IconContext.Provider>
+        </div>
+      </IconContext.Provider>
       </div>
-      <p>© Copyright Ping. All rights reserved.</p>
-    </footer>
+      <p className="copyright">© Copyright Ping. All rights reserved.</p>
+    </div>
   );
 }
+
 export default Footer;
+ 

@@ -1,0 +1,37 @@
+.footer-container{
+    min-height: 76px;
+    margin-top:6.8rem ;
+
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+.react-icons{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid var(--Pale-Blue);
+    color: var(--Blue);
+    padding: 6px;
+}
+.copyright{
+    font-size: 1.2rem;
+    padding-top: 2.4rem;
+    color: var(--Gray);
+
+}
+.react-icons:hover {
+    background-color: var(--Blue);
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.5);
+
+  }
